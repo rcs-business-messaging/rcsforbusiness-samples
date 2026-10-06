@@ -80,20 +80,10 @@ namespace rbm_csharp_client_v1
             request.Execute();
         }
 
-        /// <summary>
-        /// Sends a user an invite to test this agent.
-        /// </summary>
+        [System.Obsolete("This tester invite API is deprecated. Please use the Business Communications API instead.")]
         public void SendTesterInvite()
         {
-            string phoneNumber = "phones/" + this.msisdn; 
-
-            Tester tester = new Tester();
-
-            PhonesResource.TestersResource.CreateRequest request
-                = rcsBusinessMessagingService.Phones.Testers.Create(tester, phoneNumber);
-
-            request.AgentId = this.agentId;
-            request.Execute();
+            Console.WriteLine("Warning: Sending a tester invite is no longer supported by the RBM API. Please use the Business Communications API instead.");
         }
 
         /// <summary>

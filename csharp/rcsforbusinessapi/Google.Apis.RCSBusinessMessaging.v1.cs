@@ -653,6 +653,14 @@ namespace Google.Apis.RCSBusinessMessaging.v1.Data
         [Newtonsoft.Json.JsonPropertyAttribute("reply")]
         public virtual SuggestedReply Reply { get; set; } 
 
+        /// <summary>Optional. Controls the display behavior of the suggestion. Applicable only to plain text messages
+        /// sent to Google Messages clients (version 20260225.00 or later). This field must only be set on standalone
+        /// suggestions associated with plain text messages. The server will reject the message if this field is applied
+        /// to suggestions in rich cards or standalone suggestions with file transfers. This setting is only serialized
+        /// for Google Messages; it is ignored by other clients (such as iOS or Samsung).</summary>
+        [Newtonsoft.Json.JsonPropertyAttribute("suggestionDisplay")]
+        public virtual string SuggestionDisplay { get; set; } 
+
         /// <summary>The ETag of the item.</summary>
         public virtual string ETag { get; set; }
     }    
