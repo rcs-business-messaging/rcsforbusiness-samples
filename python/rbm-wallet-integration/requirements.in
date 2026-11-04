@@ -1,0 +1,11 @@
+Flask
+gunicorn
+httplib2
+emoji
+oauth2client
+google-cloud
+psutil
+cachetools
+google-api-python-client
+google-auth
+python-dotenv
